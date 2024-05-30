@@ -1,4 +1,9 @@
 l-map {
   display: block;
   height: 100vh;
+  position: relative;
+}
+
+.leaflet-zoom-animated {
+  pointer-events: none;
 }
