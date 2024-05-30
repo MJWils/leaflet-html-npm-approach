@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leaflet HTML with Vite</title>
+  <title>Leaflet HTML with Vite and Tailwind CSS</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body>
-  <l-map center="[51.505, -0.09]" zoom="10">
+<body class="bg-red-900">
+  <l-map center="[51.505, -0.09]" zoom="10" class="border-4 border-red-700">
     <l-control-layers>
       <l-base-layers>
         <l-tile-layer name="OpenStreetMap" url-template="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -30,7 +30,7 @@
           </l-marker>
         </l-layer-group>
         <l-layer-group name="Shapes">
-          <l-circle lat-lng="[51.508, -0.11]" radius="500" color="blue"></l-circle>
+          <l-circle lat-lng="[51.508, -0.11]" radius="500" class="border-2 border-red-500"></l-circle>
           <l-polygon color="red">
             <l-coordinates>
               <l-coordinate lat-lng="[51.509, -0.08]"></l-coordinate>
