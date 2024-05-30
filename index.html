@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leaflet with D3 Overlay</title>
+  <title>Leaflet HTML with Vite</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <link rel="stylesheet" href="./styles.css">
@@ -31,7 +31,13 @@
         </l-layer-group>
         <l-layer-group name="Shapes">
           <l-circle lat-lng="[51.508, -0.11]" radius="500" color="blue"></l-circle>
-          <l-polygon lat-lngs="[[51.509, -0.08], [51.503, -0.06], [51.51, -0.047]]" color="red"></l-polygon>
+          <l-polygon color="red">
+            <l-coordinates>
+              <l-coordinate lat-lng="[51.509, -0.08]"></l-coordinate>
+              <l-coordinate lat-lng="[51.503, -0.06]"></l-coordinate>
+              <l-coordinate lat-lng="[51.51, -0.047]"></l-coordinate>
+            </l-coordinates>
+          </l-polygon>
         </l-layer-group>
         <l-layer-group name="Image Overlay">
           <l-image-overlay url="https://upload.wikimedia.org/wikipedia/commons/6/6e/Old_map_of_London.jpg"
