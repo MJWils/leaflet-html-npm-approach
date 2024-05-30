@@ -1,7 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 l-map {
-  @apply block h-screen;
+  display: block;
+  height: 100vh;
 }
